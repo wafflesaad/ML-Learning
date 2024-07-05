@@ -29,7 +29,7 @@ model = models.Sequential(
     [
     keras.Input(shape=(2,)),
     layers.Dense(3, activation='sigmoid', name='Layer1') ,
-     layers.Dense(1, activation='sigmoid', name='Layer2')]
+    layers.Dense(1, activation='sigmoid', name='Layer2')]
 )
 
 w1,b1 =model.get_layer("Layer1").get_weights()
